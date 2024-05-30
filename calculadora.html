@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Marcelo</title>
+    <link rel="stylesheet" href="./css/calc.css">
+    <script src="./js/calc.js"></script>
+</head>
+<body>
+
+<div class="calc">
+    <input type="text" id="display" disabled>
+    <br>
+    <input class="C" type="button" value="C" onclick=c()>
+    <br>
+    <input type="button" value="7" onclick=informarValor(value)>
+    <input type="button" value="8" onclick=informarValor(value)>
+    <input type="button" value="9" onclick=informarValor(value)>
+    <input type="button" value="/" onclick=dividir()>
+    <br>
+    <input type="button" value="4" onclick=informarValor(value)>
+    <input type="button" value="5" onclick=informarValor(value)>
+    <input type="button" value="6" onclick=informarValor(value)>
+    <input type="button" value="*" onclick=multiplicar()>
+    <br>
+    <input type="button" value="1" onclick=informarValor(value)>
+    <input type="button" value="2" onclick=informarValor(value)>
+    <input type="button" value="3" onclick=informarValor(value)>
+    <input type="button" value="-" onclick=subtracao()>
+    <br>
+    <input type="button" value="." onclick=informarValor(value)>
+    <input type="button" value="0" onclick=informarValor(value)>
+    <input type="button" value="=" onclick=resultado()>
+    <input type="button" value="+" onclick=soma()>
+</div>
+
+</body>
+<footer><a class="link" href="./blog.html">Voltar</a></footer>
+</html>

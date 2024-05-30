@@ -1,0 +1,227 @@
+.logo_site {
+    width: 10%;
+    height: 5%;
+}
+
+header {
+    background: url(../img/index_bg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    padding: 20px;
+    
+}
+
+.opcoes-header ui{
+font-size: 15px;
+
+}
+.opcoes-header ul li {
+    display: inline;
+    margin-left: 20px;
+    
+    
+}
+.opcoes-header {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.opcoes-header a,
+.opcoes-header a :visited {
+    
+    color: black;
+    padding: 8px 12px;
+}
+.opcoes-header a:hover{
+    background-color: #8AD6E6;
+    color: yellow;
+}
+.lupa {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px;;
+}
+.busca, 
+.menu-conteudo {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.busca h2,
+.busca form,
+.menu-conteudo h2 {
+    margin: 10px;
+}
+.menu-conteudo {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-conteudo h2 {
+    margin: 10px;
+}
+
+.menu-conteudo li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-conteudo a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-conteudo li ul {
+    display: none;
+    /* por padrão escondida */
+}
+
+.menu-conteudo li:hover ul {
+    display: block;
+    /* no mouse aparece */
+}
+
+.menu-conteudo ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-conteudo li li a:before {
+    content: '- ';
+}
+.img_fundo{
+    width: 15%;
+    height: 15%;
+}
+
+.troca , .pause{
+    width: 30%;
+    height: 30%;
+    padding-bottom: 0%;
+}
+.container{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.painel figure {
+    position: relative;
+    width: 15%; /* Defina um tamanho para cada figura */
+    margin: 0.1%; /* Adiciona uma margem entre as figuras */
+    float: left; /* Faz com que as figuras fiquem lado a lado */
+}
+
+.painel img {
+    display: block;
+    width: 100%; /* Ajusta a largura da imagem para ocupar todo o espaço da figura */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.painel figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta a largura do figcaption para ocupar todo o espaço da figura */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.painel figure:hover figcaption {
+    opacity: 1;
+}
+.painel h2 {
+    position: absolute;
+    top: -50%; /* Posiciona o título acima do painel */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.aula1 {
+    float: left;
+    background-color: #f5dcdc;
+    background-size: contain;
+}
+.aula2 {
+    float: left;  
+    background-color: #dcdcf5;
+    /*Define a posição do painel*/
+}
+.painel {
+    position: relative;
+    margin-bottom: 10px; /* Adiciona uma margem entre os painéis */
+    background-size: auto; /* Ajusta o tamanho do background ao conteúdo */
+    padding: 10px; /* Adiciona uma margem interna para evitar que o fundo apareça muito próximo das bordas */
+}
+.painel li:hover {
+    transform: scale(1.2);
+    transform: scale(1.2) rotate(-5deg);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition:0.3s;
+    
+}
+.painel li:hover {
+    box-shadow: 0 0 5px #333;
+    transition: box-shadow 0.7s;
+}
+.painel li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition:
+        0.7s;
+}
+
+.painel li:hover {
+    transform: scale(1.2);
+}
+.painel li:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+.aula2 {
+    background: linear-gradient(#dcdcf5, #f4bebe);
+}
+.aula1 {
+    background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.logo-rodape{
+    width: 5%;
+    height: 5%;
+}
+footer{
+    margin-top: 250px;
+    background: url(../img/index_bg.jpg);
+}
+.aulas {
+    float: left;
+    background-color: #f5dcdc;
+    background-size: contain;
+    background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+
+

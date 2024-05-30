@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cornsilk;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+.header {
+    background-color:  #003366;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.menu a,
+.menu a :visited {
+    color: azure;
+    padding: 8px 12px;
+}
+.menu a:hover{
+    background-color: azure;
+    color: #003366;
+}
+.container {
+    background-color: cadetblue;
+    width: 928px;
+    margin: auto;
+}
+.postagens {
+    width: 40%;
+    background-color: cornflowerblue;
+    
+}
+.postagem{
+    padding: 1%;
+}
+.e1 {
+    width: 100%;
+}
+
+span{
+    display: block;
+    font-size: 12px;
+    }
+
+.link{
+    color: azure;
+}
+.jogo {
+    width: 100%;
+}

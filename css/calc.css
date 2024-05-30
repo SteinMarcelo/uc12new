@@ -1,0 +1,36 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: azure;
+}
+
+.calc {
+    margin: 100 auto;
+    border: 15px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #003366;
+    height: fit-content;
+    width: fit-content;
+    padding-right: 18px;
+}
+
+input[type="button"] {
+    width: 70px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 315px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    border-radius: 5px;
+    background-color: azure;
+}
