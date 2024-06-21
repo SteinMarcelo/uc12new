@@ -1,47 +1,83 @@
-body{
-    background-image:url("../img/bolso.png");
-}
-.container {
-    width: 96%;
+/* Reseta algumas propriedades básicas */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header h1 {
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo para o título principal */
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-header h1 img {
-    max-width: 50%;
+/* Estilo para o subtítulo */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.carrinho {
-    display: none;
+/* Estilo para as caixas das aulas */
+.aula {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.menu-conteudo {
-    position: static;
-    text-align: center;
+/* Estilo para o parágrafo */
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-.menu-opcoes ul li {
-    display: inline-block;
-    margin: 5px;
+/* Estilo para a lista de exercícios */
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.busca,
-.menu-departamentos,
-.destaque img {
-    margin-right: 0;
+ul li {
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background: #f1f1f1;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o controle de áudio */
+audio {
+    display: block;
+    margin: 20px auto;
     width: 100%;
-}
-
-.painel {
-    width: auto;
-}
-
-.painel li {
-    width: 30%;
-}
-
-.painel img {
-    width: 50%;
+    max-width: 
 }
