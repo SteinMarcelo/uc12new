@@ -248,7 +248,7 @@ footer .social {
 }
 
 footer .social li a {
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;

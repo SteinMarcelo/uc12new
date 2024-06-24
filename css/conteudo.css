@@ -1,7 +1,7 @@
 /* Reseta algumas propriedades básicas */
 body, h1, h2, p, ul, li {
     margin: 0;
-    padding: 0;
+    padding: 1%;
     box-sizing: border-box;
 }
 
@@ -79,5 +79,56 @@ audio {
     display: block;
     margin: 20px auto;
     width: 100%;
-    max-width: 
+}
+
+.logo-rodape{
+    width: 10%;
+    height: 10%;
+}
+
+.aulas {
+    float: left;
+    background-color: #f5dcdc;
+    background-size: contain;
+    background: linear-gradient(#f5dcdc, #bebef4);
+}
+footer {
+    margin-top:10px;
+    /*background: url(../img/index_bg.jpg);*/
+    background-color: #8AD6E6;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.logo-rodape {
+    width: 50px;
+    height: auto;
+}
+
+footer .social {
+    list-style: none;
+    padding: 0;
+    margin: 1% 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social li a {
+    color: rgb(226, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer .social li a:hover {
+    background-color: #8AD6E6;
+    color: yellow;
 }
