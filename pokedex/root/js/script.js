@@ -1,6 +1,11 @@
+const Audio= document.getElementById("audio");
+const InputRange = document.getElementById("input-range");
+volumeSlider.addEventListener("input", () => { Audio.volume = InputRange.value;});
+
 const pokemonName = document.querySelector('.pokemon__name');
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
+const pokemonSound = document.querySelector('.pokemon__sound')
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
