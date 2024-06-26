@@ -1,17 +1,12 @@
-const Audio= document.getElementById("audio");
-const InputRange = document.getElementById("input-range");
-volumeSlider.addEventListener("input", () => { Audio.volume = InputRange.value;});
-
 const pokemonName = document.querySelector('.pokemon__name');
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
-const pokemonSound = document.querySelector('.pokemon__sound')
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
 const buttonPrev = document.querySelector('.btn-prev');
 const buttonNext = document.querySelector('.btn-next');
-
+const pokemonSound = document.querySelector('.pokemon__sound');
 let searchPokemon = 1;
 
 const fetchPokemon = async (pokemon) => {
@@ -25,7 +20,7 @@ const fetchPokemon = async (pokemon) => {
 
 const renderPokemon = async (pokemon) => {
 
-  pokemonName.innerHTML = 'Loading...';
+  pokemonName.innerHTML = 'Carregando...';
   pokemonNumber.innerHTML = '';
 
   const data = await fetchPokemon(pokemon);
@@ -35,11 +30,13 @@ const renderPokemon = async (pokemon) => {
     pokemonName.innerHTML = data.name;
     pokemonNumber.innerHTML = data.id;
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+    pokemonSound.src = data['cries']['latest'];
+    //pokemonSound.src =`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${pokemon}.ogg`;
     input.value = '';
     searchPokemon = data.id;
   } else {
     pokemonImage.style.display = 'none';
-    pokemonName.innerHTML = 'Not found :c';
+    pokemonName.innerHTML = 'Não encontrado ;-;';
     pokemonNumber.innerHTML = '';
   }
 }
