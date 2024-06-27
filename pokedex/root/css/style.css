@@ -92,3 +92,15 @@ main {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }
+audio {
+  display: none;
+}
+.pokemon__stats {
+  position:fixed;
+  font-weight: 600;
+  color: #ffffff;
+  top: 30%;
+  right: 15%;
+  text-align: left;
+  font-size: clamp(8px, 5vw, 25px);
+}

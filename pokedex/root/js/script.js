@@ -1,6 +1,9 @@
 const pokemonName = document.querySelector('.pokemon__name');
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
+const pokemonWeight = document.querySelector('.pokemon__weight')
+const pokemonHeight = document.querySelector('.pokemon__height')
+const pokemonType = document.querySelector('.pokemon__type')
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
@@ -24,14 +27,15 @@ const renderPokemon = async (pokemon) => {
   pokemonNumber.innerHTML = '';
 
   const data = await fetchPokemon(pokemon);
-
   if (data) {
     pokemonImage.style.display = 'block';
-    pokemonName.innerHTML = data.name;
-    pokemonNumber.innerHTML = data.id;
+    pokemonName.innerHTML = data['name'];
+    pokemonNumber.innerHTML = data['id'];
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
     pokemonSound.src = data['cries']['latest'];
-    //pokemonSound.src =`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${pokemon}.ogg`;
+    pokemonWeight.innerHTML = data['weight'];
+    pokemonHeight.innerHTML = data['height'];
+    pokemonType.innerHTML = data.types.map(type => type.type.name).join(', <br>');;
     input.value = '';
     searchPokemon = data.id;
   } else {
