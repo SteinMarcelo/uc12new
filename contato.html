@@ -1,29 +1,47 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title> Contato</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/contato.css">
+    <script src="./js/contato.js" defer></script>
 </head>
-
 <body>
     <header>
-        <script src="./js/contato.js"></script>
+        <h1>Contato</h1>
     </header>
-    <link rel="stylesheet" href="./css/contato.css">
-    <h1>Sobre</h1>
-    <h2>Olá, Meu nome é Marcelo Boeira.<br>
-        Tenho 26 anos, trabalho como suporte técnico em uma empresa de ERP,<br>
-        moro em São leopoldo, gosto de desenhar e assistir filmes<br>
-
-    </h2>
-    <p>MARCELO S. BOEIRA</p>
+    <main>
+        <section class="about">
+            <h2>Sobre</h2>
+            <p>Olá, Meu nome é Marcelo Boeira.<br>
+               Tenho 26 anos, trabalho como desenvolvedor em uma empresa de ERP,<br>
+               moro em São Leopoldo, gosto de desenhar e assistir filmes.</p>
+            <p><strong>MARCELO S. BOEIRA</strong></p>
+        </section>
+        <section class="contact-info">
+            <h2>Informações de Contato</h2>
+            <ul>
+                <li>Email: <a href="mailto:marcelo.boeira@example.com">marcelo.boeira@example.com</a></li>
+                <li>Instagram: <a href="https://instagram.com/marcelo_boeira" target="_blank">@marcelo_boeira</a></li>
+                <li>GitHub: <a href="https://github.com/marcelo-boeira" target="_blank">github.com/marcelo-boeira</a></li>
+                <li>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank">+55 11 99999-9999</a></li>
+            </ul>
+        </section>
+        <section class="audio-controls">
+            <h2>Áudio</h2>
+            <audio id="audio" src="arquivo.mp3" controls></audio>
+            <div class="range-control">
+                <label for="input-range">Volume:</label>
+                <input type="range" min="0" max="1" step="0.01" id="input-range">
+            </div>
+            <audio controls preload="metadata" autoplay>
+                <source src="./audio/nib.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marcelo Boeira. Todos os direitos reservados.</p>
+    </footer>
 </body>
-
-<audio id="audio" src="arquivo.mp3"></audio>
-<input type="range" min="0" max="1" step="0.01" id="input-range" />
-<audio controls preload="metadata" autoplay>
-
-    <source src="./audio/nib.mp3" type="audio/mpeg">
-</audio>
-
 </html>

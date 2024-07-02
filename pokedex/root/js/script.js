@@ -33,8 +33,8 @@ const renderPokemon = async (pokemon) => {
     pokemonNumber.innerHTML = data['id'];
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
     pokemonSound.src = data['cries']['latest'];
-    pokemonWeight.innerHTML = data['weight'];
-    pokemonHeight.innerHTML = data['height'];
+    pokemonWeight.innerHTML = data['weight']/10;
+    pokemonHeight.innerHTML = data['height']/10;
     pokemonType.innerHTML = data.types.map(type => type.type.name).join(', <br>');;
     input.value = '';
     searchPokemon = data.id;

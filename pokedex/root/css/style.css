@@ -99,8 +99,8 @@ audio {
   position:fixed;
   font-weight: 600;
   color: #ffffff;
-  top: 30%;
-  right: 15%;
+  top: 35%;
+  right: 33%;
   text-align: left;
   font-size: clamp(8px, 5vw, 25px);
 }
